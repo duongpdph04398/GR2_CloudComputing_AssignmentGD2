@@ -1,1 +1,0 @@
-# GR2_CloudComputing_AssignmentGD2
