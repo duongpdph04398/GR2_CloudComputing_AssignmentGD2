@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GR2_CloudComputing_Assignment", "GR2_CloudComputing_Assignment\", "{1FB87C19-7D05-4267-B065-4FBB16D00138}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GR2_CloudComputing_Assignment", "GR2_CloudComputing_Assignment\", "{1373D3C0-3ACB-4F92-B00F-465DEDB0E95F}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/GR2_CloudComputing_Assignment"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\GitHub\Cloud-Computing_Assignment_HT\GR2_CloudComputing_Assignment\"
+		Debug.AspNetCompiler.PhysicalPath = "GR2_CloudComputing_Assignment\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\GR2_CloudComputing_Assignment\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/GR2_CloudComputing_Assignment"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\GitHub\Cloud-Computing_Assignment_HT\GR2_CloudComputing_Assignment\"
+		Release.AspNetCompiler.PhysicalPath = "GR2_CloudComputing_Assignment\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\GR2_CloudComputing_Assignment\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
@@ -26,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1FB87C19-7D05-4267-B065-4FBB16D00138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FB87C19-7D05-4267-B065-4FBB16D00138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1373D3C0-3ACB-4F92-B00F-465DEDB0E95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1373D3C0-3ACB-4F92-B00F-465DEDB0E95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

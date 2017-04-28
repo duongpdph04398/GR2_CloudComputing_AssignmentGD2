@@ -1,0 +1,18 @@
+<div class="col-md-4 text-center" id="anItem">
+                            <div class="panel panel-danger panel-pricing">
+                                <div class="panel-heading">
+                                    <a href="ProductDetails.aspx?productID=">
+                                        <img src="img/Brand/logo.jpg" width="100" height="auto" />
+                                    </a>
+                                </div>
+                                <ul class="list-group text-center">
+                                    <li class="list-group-item"><b>Mã Lo?i :</b>MaLoai</li>
+                                    <li class="list-group-item"><b>Tên Lo?i :</b>TenLoai</li>
+                                </ul>
+                                <div class="panel-footer">
+                                    <asp:Button ID="Button5" CssClass="btn btn-lg btn-block btn-warning" runat="server" CommandName="Edit" Text="S?a" OnClick="btEdit_Click" />
+                                    <asp:Button ID="Button6" CssClass="btn btn-lg btn-block btn-success" runat="server" CommandName="Delete" Text="Xóa" />
+                                    <!-- danger:red - warning:yellow - success:green
+                                </div>
+                            </div>
+                        </div>
