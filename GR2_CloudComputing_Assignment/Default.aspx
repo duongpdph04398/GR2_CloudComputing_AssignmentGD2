@@ -616,7 +616,7 @@
                         </td>
                     </InsertItemTemplate>
                     <ItemTemplate>
-                        <td runat="server" style="background-color: #E0FFFF;color: #333333; padding-left:20px;padding-right:20px;">
+                        <td runat="server" style="background-color: #633211;color: #ef1111; padding-left:20px;padding-right:20px;">
                             Mã KH:
                             <asp:Label ID="MaKHLabel" runat="server" Text='<%# Eval("MaKH") %>' />
                             <br />
