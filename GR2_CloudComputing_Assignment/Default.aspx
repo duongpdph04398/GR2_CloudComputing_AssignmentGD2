@@ -727,72 +727,113 @@
                 </div>
                 <div>
                     <asp:ListView ID="ListView2" runat="server" DataKeyNames="MaHD" DataSourceID="LoadHD" InsertItemPosition="LastItem">
+                        <AlternatingItemTemplate>
+                            <td runat="server" style="background-color:#e5570f;">MaHD:
+                                <asp:Label ID="MaHDLabel" runat="server" Text='<%# Eval("MaHD") %>' />
+                                <br />
+                                MaKH:
+                                <asp:Label ID="MaKHLabel" runat="server" Text='<%# Eval("MaKH") %>' />
+                                <br />
+                                NgayTT:
+                                <asp:Label ID="NgayTTLabel" runat="server" Text='<%# Eval("NgayTT") %>' />
+                                <br />
+                                TongTien:
+                                <asp:Label ID="TongTienLabel" runat="server" Text='<%# Eval("TongTien") %>' />
+                                <br />
+                                <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                                <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
+                            </td>
+                        </AlternatingItemTemplate>
                         <EditItemTemplate>
-                            <td runat="server" style="">Mã Hóa Đơn:
+                            <td runat="server" style="background-color:#008A8C;color: #FFFFFF;">MaHD:
                                 <asp:Label ID="MaHDLabel1" runat="server" Text='<%# Eval("MaHD") %>' />
                                 <br />
-                                Mã Khách Hàng:
+                                MaKH:
                                 <asp:TextBox ID="MaKHTextBox" runat="server" Text='<%# Bind("MaKH") %>' />
                                 <br />
-                                Ngày Thanh Toán:
+                                NgayTT:
                                 <asp:TextBox ID="NgayTTTextBox" runat="server" Text='<%# Bind("NgayTT") %>' />
                                 <br />
-                                Tổng Tiền:
+                                TongTien:
                                 <asp:TextBox ID="TongTienTextBox" runat="server" Text='<%# Bind("TongTien") %>' />
                                 <br />
-                                <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Lưu" />
-                                <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Hủy" />
+                                <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
+                                <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
                             </td>
                         </EditItemTemplate>
                         <EmptyDataTemplate>
-                            <table style="">
+                            <table style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
                                 <tr>
                                     <td>No data was returned.</td>
                                 </tr>
                             </table>
                         </EmptyDataTemplate>
                         <InsertItemTemplate>
-                            <td runat="server" style="padding: 0 15px; background: #E0FFFF;border: 1px solid; border-color: #ebccd1;">
-                                Mã Hóa Đơn:<br />
+                            <td runat="server" style="">
+                                MaHD:
                                 <asp:TextBox ID="MaHDTextBox" runat="server" Text='<%# Bind("MaHD") %>' />
-                                <br />Mã Khách Hàng:<br />
+                                <br />
+                                MaKH:
                                 <asp:TextBox ID="MaKHTextBox" runat="server" Text='<%# Bind("MaKH") %>' />
-                                <br />Ngày Thanh Toán:<br />
+                                <br />NgayTT:
                                 <asp:TextBox ID="NgayTTTextBox" runat="server" Text='<%# Bind("NgayTT") %>' />
-                                <br />Tổng Tiền:<br />
+                                <br />
+                                TongTien:
                                 <asp:TextBox ID="TongTienTextBox" runat="server" Text='<%# Bind("TongTien") %>' />
                                 <br />
-                                <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Thêm" />
-                                <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Xóa Dữ Liệu" />
+                                <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
+                                <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
                             </td>
                         </InsertItemTemplate>
                         <ItemTemplate>
-                            <td runat="server" style="border: 1px solid; border-color: #ebccd1; padding-left: 15px; padding-right: 15px;">
-                                    Mã Hóa Đơn:
+                            <td runat="server" style="background-color: #DCDCDC; color: #000000;">
+                                    MaHD:
                                     <asp:Label ID="MaHDLabel" runat="server" Text='<%# Eval("MaHD") %>' />
                                     <br />
-                                    Mã Khách Hàng:
+                                    MaKH:
                                     <asp:Label ID="MaKHLabel" runat="server" Text='<%# Eval("MaKH") %>' />
                                     <br />
-                                    Ngày Thanh Toán:<br />
+                                    NgayTT:
                                     <asp:Label ID="NgayTTLabel" runat="server" Text='<%# Eval("NgayTT") %>' />
                                     <br />
-                                    Tổng Tiền:
+                                    TongTien:
                                     <asp:Label ID="TongTienLabel" runat="server" Text='<%# Eval("TongTien") %>' />
                                     <br />
-                                    <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Sửa" />
-                                    <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Xóa" />
+                                    <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                                    <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                                 </td>
                         </ItemTemplate>
                         <LayoutTemplate>
-                            <table runat="server" border="0" style="">
+                            <table runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
                                 <tr id="itemPlaceholderContainer" runat="server">
                                     <td id="itemPlaceholder" runat="server"></td>
                                 </tr>
                             </table>
-                            <div style="">
+                            <div style="text-align: center;background-color: #CCCCCC;font-family: Verdana, Arial, Helvetica, sans-serif;color: #000000;">
+                                <asp:DataPager ID="DataPager1" runat="server">
+                                    <Fields>
+                                        <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
+                                    </Fields>
+                                </asp:DataPager>
                             </div>
                         </LayoutTemplate>
+                        <SelectedItemTemplate>
+                            <td runat="server" style="background-color:#008A8C;font-weight: bold;color: #FFFFFF;">MaHD:
+                                <asp:Label ID="MaHDLabel" runat="server" Text='<%# Eval("MaHD") %>' />
+                                <br />
+                                MaKH:
+                                <asp:Label ID="MaKHLabel" runat="server" Text='<%# Eval("MaKH") %>' />
+                                <br />
+                                NgayTT:
+                                <asp:Label ID="NgayTTLabel" runat="server" Text='<%# Eval("NgayTT") %>' />
+                                <br />
+                                TongTien:
+                                <asp:Label ID="TongTienLabel" runat="server" Text='<%# Eval("TongTien") %>' />
+                                <br />
+                                <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                                <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
+                            </td>
+                        </SelectedItemTemplate>
                     </asp:ListView>
                     <asp:SqlDataSource ID="LoadHD" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\NHOM2_CloudComputing.mdf;Integrated Security=True" DeleteCommand="DELETE FROM [HoaDon] WHERE [MaHD] = @MaHD" InsertCommand="INSERT INTO [HoaDon] ([MaHD], [MaKH], [NgayTT], [TongTien]) VALUES (@MaHD, @MaKH, @NgayTT, @TongTien)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [MaHD], [MaKH], [NgayTT], [TongTien] FROM [HoaDon]" UpdateCommand="UPDATE [HoaDon] SET [MaKH] = @MaKH, [NgayTT] = @NgayTT, [TongTien] = @TongTien WHERE [MaHD] = @MaHD">
                         <DeleteParameters>
