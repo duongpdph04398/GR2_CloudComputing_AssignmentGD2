@@ -305,6 +305,27 @@
                             <td id="itemPlaceholder" runat="server"></td>
                         </tr>
                     </GroupTemplate>
+                    <EditItemTemplate>
+                        <div style="width: 400px; float:left; padding-left: 20px; text-align: center;">
+                            <div class="panel panel-danger panel-pricing">
+                                <ul class="list-group text-center">
+                                    <li class="list-group-item"><b>Mã Loại: </b><asp:Label ID="Label1" runat="server" Text='<%# Eval("MaLoai") %>' /></li>
+                                    <li class="list-group-item"><b>Tên Loại: </b><asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("TenLoai") %>' /></li>
+                                    <li class="list-group-item"><b>Logo: </b><asp:TextBox ID="logoImages" runat="server" Visible="false" Text='<%# Bind("Logo") %>' /></li>
+                                    <li class="list-group-item"><asp:FileUpload CssClass="text-center" ID="FileChooser" runat="server" /></li>
+                                    <asp:Button runat="server" ID="Button1" Font-Bold="true" Text="Upload" OnClick="UploadButton_Click1" />
+                                </ul>
+                                <div class="panel-footer">
+                                    <asp:Button ID="Button5" CssClass="btn btn-lg btn-block btn-warning" runat="server" CommandName="Update" Text="Lưu" OnClick="InsertButton_Click"/>
+                                    <asp:Button ID="Button6" CssClass="btn btn-lg btn-block btn-success" runat="server" CommandName="Cancel" Text="Hủy" OnClick="InsertButton_Click" />
+                                    <!-- danger:red - warning:yellow - success:green -->
+                                </div>
+                            </div>
+                        </div>
+                        <div style="float: left; padding-bottom: 70px; padding-right: 300px;">
+                            <asp:Image ID="preview" Width="280" Height="280" ImageUrl='<%# "~/img/Brand/"+Eval("Logo") %>' runat="server" />
+                        </div>
+                    </EditItemTemplate>
                     <ItemTemplate>
                         <div class="col-md-4 text-center" id="anItem">
                             <div class="panel panel-danger panel-pricing">
@@ -318,7 +339,7 @@
                                     <li class="list-group-item"><b>Tên Loại :</b> <%# Eval("TenLoai") %></li>
                                 </ul>
                                 <div class="panel-footer">
-                                    <asp:Button ID="Button5" CssClass="btn btn-lg btn-block btn-warning" runat="server" CommandName="Edit" Text="Sửa" OnClick="btEdit_Click" />
+                                    <asp:Button ID="Button5" CssClass="btn btn-lg btn-block btn-danger" runat="server" CommandName="Edit" Text="Sửa" OnClick="btEdit_Click" />
                                     <asp:Button ID="Button6" CssClass="btn btn-lg btn-block btn-success" runat="server" CommandName="Delete" Text="Xóa" />
                                     <!-- danger:red - warning:yellow - success:green -->
                                 </div>

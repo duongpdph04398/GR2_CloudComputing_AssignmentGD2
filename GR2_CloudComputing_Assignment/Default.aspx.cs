@@ -91,12 +91,11 @@ public partial class preview_dotnet_templates_with_out_masterpages_Shop_item_ind
     {
         ListView_Category.Visible = true;
         InsertCate_ListView.Visible = false;
-        EditCate_ListView.Visible = false;
+        
         btAdd.Visible = true;
     }
     protected void btEdit_Click(object sender, EventArgs e)
     {
-        ListView_Category.Visible = false;
-        EditCate_ListView.Visible = true;
+        
     }
 }
