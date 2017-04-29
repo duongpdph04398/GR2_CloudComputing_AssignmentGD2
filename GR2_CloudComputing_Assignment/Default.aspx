@@ -384,7 +384,7 @@
             </div>
             <div class="page-header">
                 <div class="container">
-                    <h1>
+                    <h1 style="color:blue;">
                         SẢN PHẨM</h1>
                 </div>
             </div>
